@@ -36,5 +36,6 @@ function showTable() {
 
 function delEvent(id) {
    tasks.splice(id, 1);
+   localStorage.setItem('tasks', JSON.stringify(tasks));
    showTable();
 }
